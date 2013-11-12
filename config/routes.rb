@@ -6,8 +6,10 @@ SimpleBlog::Application.routes.draw do
   # You can have the root of your site routed with "root"
   #root 'welcome#index'
 
-  resources :posts
+  resources :posts do
   root to: 'welcome#index'
+    resources :comments
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

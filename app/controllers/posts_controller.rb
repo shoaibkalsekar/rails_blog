@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
 	def new
+		@post = Post.new(post_params)
 	end
 
 	def create
@@ -32,6 +33,13 @@ class PostsController < ApplicationController
 		else
 			render 'edit'
 		end
+	end
+
+	def destroy
+	  @post = Post.find(params[:id])
+	  @post.destroy
+	 
+	  redirect_to posts_path
 	end
 
 	private
