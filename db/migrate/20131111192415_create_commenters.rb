@@ -1,9 +1,9 @@
-class CreateCommenters < ActiveRecord::Migration
+class CreateComments < ActiveRecord::Migration
   def change
-    create_table :commenter do |t|
+    create_table :comments do |t|
       t.string :commenter
       t.text :body
-      t.references :post
+      t.references :post, index: true
 
       t.timestamps
     end
