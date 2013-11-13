@@ -1,3 +1,155 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body,html
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.global_container
+{
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+h1
+{
+	margin-top: 0;
+	padding-top: 10px;
+	color: #696969;
+	text-align: center;
+	background-color: rgb(165, 248, 228);
+	height: 60px;
+}
+
+/*.new
+{
+	text-align: center;
+	background-color: rgb(253, 170, 170);
+	border-radius: 5px;
+	border: 1px solid rgb(248, 66, 66);
+	padding: 5px 0;
+}
+
+.new:hover
+{
+	background-color: #fe7e7e;
+	color: white !important;
+}*/
+.post
+{
+	background-color: #ececec;
+	border: 1px solid #d4d4d4;
+	margin: 15px 0;
+	padding: 10px;
+}
+
+.title
+{
+	font-size: 2em;
+	border-bottom: 1px solid #d4d4d4;
+	position: relative;
+	margin: 10px 0;
+}
+
+.text
+{
+	font-size: 1.5em;
+	color: #747474;
+	padding: 10px;
+}
+
+.options
+{
+	border-top: 1px solid #d4d4d4;
+	padding: 10px;
+}
+.options > div
+{
+	display: inline-block;
+	vertical-align: top;
+	font-size: .9em;
+
+}
+
+a:hover
+{
+	background-color: #d4d4d4;
+}
+
+a
+{
+	text-decoration: none;
+	color: #646464; 
+	border: 1px solid #747474;
+	text-align: center;
+	padding: 5px 10px;
+	margin: 0 5px;
+	background-color: #f9f9f9;
+	border-radius: 3px;
+}
+
+.comments_area
+{
+	font-size: .9em;
+	border: 1px solid #ececec;
+}
+
+.comments_area .comments_header
+{
+	font-size: 1.2em;
+	margin: 0;
+	padding: 10px;
+	background-color: #BBE2F5;
+}
+
+.comment
+{
+	border: 1px solid #d4d4d4;
+	margin: 10px;
+	padding: 0 15px;
+}
+.comment:nth-child(2n+1)
+{
+	background-color: #e6e6e6;
+}
+
+.comment_title
+{
+	border-bottom: 1px solid #d4d4d4;
+	text-transform: capitalize;
+	font-size: 1em
+}
+
+.add
+{
+	padding: 20px;
+}
+
+.add_header
+{
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.comment_delete
+{
+	text-align: right;
+	color: red;
+}
+
+#post_title
+{
+	width: 100%;
+	padding: 5px;
+	margin: 10px 0;
+}
+#post_text
+{
+	width: 100%;
+	max-width: 100%;
+	padding: 5px;
+	margin: 10px 0;
+}

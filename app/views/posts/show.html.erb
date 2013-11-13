@@ -1,19 +1,28 @@
-<%= stylesheet_link_tag "style.css" %>
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @post.text %>
-</p>
- 
-<h2>Comments</h2>
-<%= render @post.comments %>
- 
-<h2>Add a comment:</h2>
-<%= render "comments/form" %>
- 
-<%= link_to 'Edit Post', edit_post_path(@post) %>
-<%= link_to 'Back to Posts', posts_path %>
+
+<div class="global_container">
+
+<div class="post">
+	<div class="title">
+	  <%= @post.title %>
+	</div>
+	 
+	<div class="text">
+	  <%= @post.text %>
+	</div>
+</div>
+
+<div class="comments_area">
+	<div class="comments_header">Comments</div>
+	<%= render @post.comments %>
+	 
+	<div class="add">
+		<div class="add_header">Add a comment:</div>
+		<%= render "comments/form" %>
+	</div>
+	 
+	<%= link_to 'Edit Post', edit_post_path(@post) %>
+	<%= link_to 'Back to Posts', posts_path %>
+</div>
+
+
+</div>
